@@ -1,1 +1,67 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hua Chenyu | Album Collection</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar md:navbar-expand bg-1 fg-2">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    Hua Chenyu
+                </a>
+
+                <button class="btn-icon navbar-toggler" type="button"
+                    data-bs-toggle="drawer"
+                    data-bs-target="#navbarMenu"
+                    aria-controls="navbarMenu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" aria-hidden="true"></span>
+                </button>
+
+                <dialog class="drawer drawer-end" tabindex="-1"
+                    id="navbarMenu" aria-labelledby="navbarMenuLabel">
+                    <div class="drawer-header">
+                        <h2 class="drawer-title" id="navbarMenuLabel">Menu</h2>
+                        <button type="button" class="btn-close"
+                            data-bs-dismiss="drawer" aria-label="Close"></button>
+                    </div>
+
+                    <div class="drawer-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                    href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#albums">Albums</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </dialog>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-4">
+        <h1 class="text-center">Hua Chenyu Album Collection</h1>
+        <p class="text-center">
+            Explore the music and creative journey of Hua Chenyu.
+        </p>
+    </main>
+
+    <script type="module" src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
