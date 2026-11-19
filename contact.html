@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Hua Chenyu Album Collection</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar md:navbar-expand bg-1 fg-2">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    Hua Chenyu
+                </a>
+
+                <button class="btn-icon navbar-toggler" type="button"
+                    data-bs-toggle="drawer"
+                    data-bs-target="#navbarMenu"
+                    aria-controls="navbarMenu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" aria-hidden="true"></span>
+                </button>
+
+                <dialog class="drawer drawer-end" tabindex="-1"
+                    id="navbarMenu" aria-labelledby="navbarMenuLabel">
+                    <div class="drawer-header">
+                        <h2 class="drawer-title" id="navbarMenuLabel">Menu</h2>
+                        <button type="button" class="btn-close"
+                            data-bs-dismiss="drawer" aria-label="Close"></button>
+                    </div>
+
+                    <div class="drawer-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="index.html#albums">Albums
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                    href="contact.html">Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </dialog>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-4 mb-4">
+        <h1 class="text-center">
+            Contact Us
+        </h1>
+        <p class="text-center">
+            Share your favourite Hua Chenyu album with us!
+        </p>
+
+        <form>
+            <div class="row g-4">
+                <div class="col-12 md:col-6">
+                    <div class="form-field">
+                        <label for="firstName" class="form-label">
+                            First Name
+                        </label>
+                        <input type="text" class="form-control"
+                            id="firstName" name="firstName" required>
+                    </div>
+                </div>
+
+                <div class="col-12 md:col-6">
+                    <div class="form-field">
+                        <label for="lastName" class="form-label">
+                            Last Name
+                        </label>
+                        <input type="text" class="form-control"
+                            id="lastName" name="lastName" required>
+                    </div>
+                </div>
+
+                <div class="col-12 md:col-6">
+                    <div class="form-field">
+                        <label for="email" class="form-label">
+                            Email
+                        </label>
+                        <input type="email" class="form-control"
+                            id="email" name="email"
+                            placeholder="name@example.com" required>
+                    </div>
+                </div>
+
+                <div class="col-12 md:col-6">
+                    <div class="form-field">
+                        <label for="favouriteAlbum" class="form-label">
+                            Favourite Album
+                        </label>
+                        <select class="form-control"
+                            id="favouriteAlbum" name="favouriteAlbum" required>
+                            <option value="">Choose an album</option>
+                            <option value="gift">Gift of Quasimodo</option>
+                            <option value="aliens">Aliens</option>
+                            <option value="h">H</option>
+                            <option value="newworld">New World</option>
+                            <option value="hope">Hope</option>
+                            <option value="quantum">Quantum Transition</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="form-field">
+                        <label for="message" class="form-label">
+                            Message
+                        </label>
+                        <textarea class="form-control"
+                            id="message" name="message"
+                            rows="5" required></textarea>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="form-field">
+                        <input type="checkbox" class="check"
+                            id="consent" name="consent" required>
+                        <label for="consent">
+                            I agree to be contacted.
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <button type="submit" class="btn-solid theme-primary">
+                        Submit
+                    </button>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <script type="module" src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
