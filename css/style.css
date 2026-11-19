@@ -1,0 +1,18 @@
+:root {
+    --bs-primary-bg: #b91c1c;
+    --bs-primary-fg: #b91c1c;
+    --bs-primary-fg-emphasis: #991b1b;
+    --bs-primary-border: #b91c1c;
+    --bs-primary-focus-ring: #b91c1c;
+    --bs-primary-contrast: #ffffff;
+}
+
+.btn-solid.theme-primary {
+    --bs-theme-bg: #b91c1c;
+    --bs-theme-border: #b91c1c;
+    --bs-theme-contrast: #ffffff;
+}
+
+.navbar {
+    background-color: #b91c1c;
+}
