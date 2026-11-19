@@ -48,7 +48,6 @@
                             </li>
                         </ul>
                     </div>
-
                 </dialog>
             </div>
         </nav>
@@ -61,8 +60,11 @@
         </p>
 
         <section class="row mt-4">
+            <div class="d-none md:d-block md:col-3 lg:col-4"></div>
+
             <div class="col-12 md:col-6 lg:col-4">
                 <div id="albumCarousel" class="carousel carousel-overlay">
+
                     <div class="carousel-inner rounded-5">
                         <div class="carousel-item active">
                             <img src="images/banner1.jpg" class="d-block w-100"
@@ -100,25 +102,62 @@
                 </div>
             </div>
 
+            <div class="d-none md:d-block md:col-3 lg:col-4"></div>
         </section>
 
+
         <section class="mt-4 mb-4" id="albums">
-            <h2 class="text-center mb-4">Explore the Albums</h2>、
+            <h2 class="text-center mb-4">Explore the Albums</h2>
             <div class="row g-4">
                 <div class="col-12 md:col-6 lg:col-4">
                     <article class="card h-100">
                         <img src="images/album1.jpg" class="card-img-top"
                             alt="Cover of Gift of Quasimodo">
+
                         <div class="card-body">
-                            <h3 class="card-title h5">
-                                Gift of Quasimodo
-                            </h3>
-                            <p class="card-text">
-                                Released in 2014, this is Hua Chenyu's
-                                first studio album. It introduces his
-                                early musical style.
-                            </p>
+                            <h3 class="card-title h5">Gift of Quasimodo</h3>
+
+                            <details class="accordion-item">
+                                <summary class="accordion-header btn-solid theme-secondary">
+                                    View Album Details ▼
+                                </summary>
+                                <div class="accordion-body">
+                                    <p>Chinese title: 卡西莫多的礼物</p>
+                                    <p>Release year: 2014</p>
+                                </div>
+                            </details>
+
+                            <button type="button" class="btn-solid theme-primary mt-3"
+                                data-bs-toggle="dialog"
+                                data-bs-target="#albumDialog1">
+                                Learn More
+                            </button>
                         </div>
+
+                        <dialog class="dialog" id="albumDialog1"
+                            aria-labelledby="albumTitle1">
+                            <div class="dialog-header">
+                                <h4 class="dialog-title" id="albumTitle1">
+                                    Gift of Quasimodo
+                                </h4>
+                                <button type="button" class="btn-close"
+                                    data-bs-dismiss="dialog"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <div class="dialog-body">
+                                <p>
+                                    Released in 2014, this is Hua Chenyu's
+                                    first studio album. It introduces his
+                                    early musical style and personal expression.
+                                </p>
+                            </div>
+
+                            <div class="dialog-footer">
+                                <button type="button" class="btn-solid theme-primary"
+                                    data-bs-dismiss="dialog">Close</button>
+                            </div>
+                        </dialog>
                     </article>
                 </div>
 
@@ -126,16 +165,52 @@
                     <article class="card h-100">
                         <img src="images/album2.jpg" class="card-img-top"
                             alt="Cover of Aliens">
+
                         <div class="card-body">
-                            <h3 class="card-title h5">
-                                Aliens
-                            </h3>
-                            <p class="card-text">
-                                Released in 2015, this album explores
-                                individuality and self-expression
-                                through energetic music.
-                            </p>
+                            <h3 class="card-title h5">Aliens</h3>
+
+                            <details class="accordion-item">
+                                <summary class="accordion-header btn-solid theme-secondary">
+                                    View Album Details ▼
+                                </summary>
+                                <div class="accordion-body">
+                                    <p>Chinese title: 异类</p>
+                                    <p>Release year: 2015</p>
+                                </div>
+                            </details>
+
+                            <button type="button" class="btn-solid theme-primary mt-3"
+                                data-bs-toggle="dialog"
+                                data-bs-target="#albumDialog2">
+                                Learn More
+                            </button>
                         </div>
+
+                        <dialog class="dialog" id="albumDialog2"
+                            aria-labelledby="albumTitle2">
+                            <div class="dialog-header">
+                                <h4 class="dialog-title" id="albumTitle2">
+                                    Aliens
+                                </h4>
+                                <button type="button" class="btn-close"
+                                    data-bs-dismiss="dialog"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <div class="dialog-body">
+                                <p>
+                                    Released in 2015, Aliens is Hua Chenyu's
+                                    second studio album. It explores
+                                    individuality and self-expression
+                                    through energetic music.
+                                </p>
+                            </div>
+
+                            <div class="dialog-footer">
+                                <button type="button" class="btn-solid theme-primary"
+                                    data-bs-dismiss="dialog">Close</button>
+                            </div>
+                        </dialog>
                     </article>
                 </div>
 
@@ -143,16 +218,49 @@
                     <article class="card h-100">
                         <img src="images/album3.jpg" class="card-img-top"
                             alt="Cover of H">
+
                         <div class="card-body">
-                            <h3 class="card-title h5">
-                                H
-                            </h3>
-                            <p class="card-text">
-                                Released in 2017, H is Hua Chenyu's
-                                third studio album and represents
-                                another stage of his musical journey.
-                            </p>
+                            <h3 class="card-title h5">H</h3>
+
+                            <details class="accordion-item">
+                                <summary class="accordion-header btn-solid theme-secondary">
+                                    View Album Details ▼
+                                </summary>
+                                <div class="accordion-body">
+                                    <p>Album title: H</p>
+                                    <p>Release year: 2017</p>
+                                </div>
+                            </details>
+
+                            <button type="button" class="btn-solid theme-primary mt-3"
+                                data-bs-toggle="dialog"
+                                data-bs-target="#albumDialog3">
+                                Learn More
+                            </button>
                         </div>
+
+                        <dialog class="dialog" id="albumDialog3"
+                            aria-labelledby="albumTitle3">
+                            <div class="dialog-header">
+                                <h4 class="dialog-title" id="albumTitle3">H</h4>
+                                <button type="button" class="btn-close"
+                                    data-bs-dismiss="dialog"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <div class="dialog-body">
+                                <p>
+                                    Released in 2017, H is Hua Chenyu's
+                                    third studio album. It represents
+                                    another stage of his musical journey.
+                                </p>
+                            </div>
+
+                            <div class="dialog-footer">
+                                <button type="button" class="btn-solid theme-primary"
+                                    data-bs-dismiss="dialog">Close</button>
+                            </div>
+                        </dialog>
                     </article>
                 </div>
 
@@ -160,16 +268,52 @@
                     <article class="card h-100">
                         <img src="images/album4.jpg" class="card-img-top"
                             alt="Cover of New World">
+
                         <div class="card-body">
-                            <h3 class="card-title h5">
-                                New World
-                            </h3>
-                            <p class="card-text">
-                                Released in 2020, this album explores
-                                different emotions and combines
-                                several musical styles.
-                            </p>
+                            <h3 class="card-title h5">New World</h3>
+
+                            <details class="accordion-item">
+                                <summary class="accordion-header btn-solid theme-secondary">
+                                    View Album Details ▼
+                                </summary>
+                                <div class="accordion-body">
+                                    <p>Chinese title: 新世界 NEW WORLD</p>
+                                    <p>Release year: 2020</p>
+                                </div>
+                            </details>
+
+                            <button type="button" class="btn-solid theme-primary mt-3"
+                                data-bs-toggle="dialog"
+                                data-bs-target="#albumDialog4">
+                                Learn More
+                            </button>
                         </div>
+
+                        <dialog class="dialog" id="albumDialog4"
+                            aria-labelledby="albumTitle4">
+                            <div class="dialog-header">
+                                <h4 class="dialog-title" id="albumTitle4">
+                                    New World
+                                </h4>
+                                <button type="button" class="btn-close"
+                                    data-bs-dismiss="dialog"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <div class="dialog-body">
+                                <p>
+                                    Released in 2020, New World is
+                                    Hua Chenyu's fourth studio album.
+                                    It explores different emotions
+                                    and combines several musical styles.
+                                </p>
+                            </div>
+
+                            <div class="dialog-footer">
+                                <button type="button" class="btn-solid theme-primary"
+                                    data-bs-dismiss="dialog">Close</button>
+                            </div>
+                        </dialog>
                     </article>
                 </div>
 
@@ -177,16 +321,52 @@
                     <article class="card h-100">
                         <img src="images/album5.jpg" class="card-img-top"
                             alt="Cover of Hope">
+
                         <div class="card-body">
-                            <h3 class="card-title h5">
-                                Hope
-                            </h3>
-                            <p class="card-text">
-                                Released in 2022, Hope focuses on
-                                emotions, relationships, and
-                                personal experiences.
-                            </p>
+                            <h3 class="card-title h5">Hope</h3>
+
+                            <details class="accordion-item">
+                                <summary class="accordion-header btn-solid theme-secondary">
+                                    View Album Details ▼
+                                </summary>
+                                <div class="accordion-body">
+                                    <p>Chinese title: 希忘 Hope</p>
+                                    <p>Release year: 2022</p>
+                                </div>
+                            </details>
+
+                            <button type="button" class="btn-solid theme-primary mt-3"
+                                data-bs-toggle="dialog"
+                                data-bs-target="#albumDialog5">
+                                Learn More
+                            </button>
                         </div>
+
+                        <dialog class="dialog" id="albumDialog5"
+                            aria-labelledby="albumTitle5">
+                            <div class="dialog-header">
+                                <h4 class="dialog-title" id="albumTitle5">
+                                    Hope
+                                </h4>
+                                <button type="button" class="btn-close"
+                                    data-bs-dismiss="dialog"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <div class="dialog-body">
+                                <p>
+                                    Released in 2022, Hope is Hua Chenyu's
+                                    fifth studio album. It focuses on
+                                    emotions, relationships, and
+                                    personal experiences.
+                                </p>
+                            </div>
+
+                            <div class="dialog-footer">
+                                <button type="button" class="btn-solid theme-primary"
+                                    data-bs-dismiss="dialog">Close</button>
+                            </div>
+                        </dialog>
                     </article>
                 </div>
 
@@ -194,23 +374,58 @@
                     <article class="card h-100">
                         <img src="images/album6.jpg" class="card-img-top"
                             alt="Cover of Quantum Transition">
+
                         <div class="card-body">
-                            <h3 class="card-title h5">
-                                Quantum Transition
-                            </h3>
-                            <p class="card-text">
-                                Released in 2025, this album explores
-                                life, emotions, and self-discovery
-                                through music.
-                            </p>
+                            <h3 class="card-title h5">Quantum Transition</h3>
+
+                            <details class="accordion-item">
+                                <summary class="accordion-header btn-solid theme-secondary">
+                                    View Album Details ▼
+                                </summary>
+                                <div class="accordion-body">
+                                    <p>Chinese title: 量变临界点</p>
+                                    <p>Release year: 2025</p>
+                                </div>
+                            </details>
+
+                            <button type="button" class="btn-solid theme-primary mt-3"
+                                data-bs-toggle="dialog"
+                                data-bs-target="#albumDialog6">
+                                Learn More
+                            </button>
                         </div>
+
+                        <dialog class="dialog" id="albumDialog6"
+                            aria-labelledby="albumTitle6">
+                            <div class="dialog-header">
+                                <h4 class="dialog-title" id="albumTitle6">
+                                    Quantum Transition
+                                </h4>
+                                <button type="button" class="btn-close"
+                                    data-bs-dismiss="dialog"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <div class="dialog-body">
+                                <p>
+                                    Released in 2025, this is Hua Chenyu's
+                                    sixth studio album. It explores life,
+                                    emotions, and self-discovery through music.
+                                </p>
+                            </div>
+
+                            <div class="dialog-footer">
+                                <button type="button" class="btn-solid theme-primary"
+                                    data-bs-dismiss="dialog">Close</button>
+                            </div>
+                        </dialog>
                     </article>
                 </div>
+
             </div>
         </section>
     </main>
 
     <script type="module" src="js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
